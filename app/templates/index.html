@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='messageStyle.css') }}">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-background"></div>
+    <form id="customerForm" class="floating-form" method="POST" action="{{url_for('main.upload')}}">
+        <h2 class="form-title">Join Our Community</h2>
+        <p class="form-subtitle">We'll keep you updated on exclusive offers</p>
+
+        <div class="input-group">
+            <input type="text" name="name" id="name" required>
+            <label for="name">Full Name</label>
+            <div class="input-decoration"></div>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email Address</label>
+            <div class="input-decoration"></div>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" name="phone" id="phone">
+            <label for="phone">Phone Number</label>
+            <div class="input-decoration"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            <span>Get Started</span>
+            <svg class="arrow-icon" viewBox="0 0 20 20">
+                <path d="M10 0l1.41 1.41L2.83 10l8.58 8.59L10 20l-10-10z"/>
+            </svg>
+        </button>
+    </form>
+</div>
+
+</body>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</html>
