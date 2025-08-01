@@ -1,0 +1,807 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Site -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <!-- Title -->
+    <title>Nexigen - Home V3</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="./static/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./static/css/animate.css">
+    <!-- Video Modal CSS -->
+    <link rel="stylesheet" href="./static/css/jquery.yu2fvl.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./static/css/owl.carousel.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Responsive Style CSS -->
+    <link rel="stylesheet" href="./static/css/responsive.css">
+</head>
+<body>
+<!--    &lt;!&ndash; ================-->
+<!--        Loading Window-->
+<!--    ================= &ndash;&gt;-->
+<!--    <div class="nexigen-loading">-->
+<!--        <div class="lds-ripple"><div></div><div></div></div>-->
+<!--    </div>-->
+
+<!-- =====================
+    Nexigen Search Popup
+====================== -->
+<div class="search-popup">
+    <button class="close-search">
+        <i class="bi bi-x-circle"></i>
+    </button>
+    <form method="post" action="#">
+        <div class="form-group">
+            <input type="search" name="search" placeholder="Search Here" required>
+            <button>
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- =====================
+    Nexigen Header Menu
+====================== -->
+<header id="sticky-header" class="header-v3">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-2">
+                <div class="mobile-flex">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo-v2.svg" alt="nexigen">
+                        </a>
+                    </div>
+                    <!-- Mobile Hamburger Menu -->
+                    <div class="hamburger-menu hamburger-menu-v2">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="header-menu">
+                    <!-- Mobile Menu Close Button -->
+                    <div class="close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                    <!-- Only Show On Mobile Devices -->
+                    <div class="appointment-mobile">
+                        <a href="#" class="btn-search"><img src="./assets/images/icon-svg/search.svg" alt="search"></a>
+                        <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
+                    </div>
+                    <!-- Menu -->
+                    <ul>
+                        <li class="active"><a class="sub-btn" href="#">Home</a>
+                            <ul class="submenu">
+                                <li><a href="index.html">Home V1</a></li>
+                                <li><a href="index-v2.html">Home V2</a></li>
+                                <li><a href="index-v3.html">Home V3</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Services</a>
+                            <ul class="submenu">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-detail.html">Services Detail</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Pages</a>
+                            <ul class="submenu">
+                                <li><a href="about-us.html">About US</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="our-team-v2.html">Our Team V2</a></li>
+                                <li><a href="team-single.html">Team Single</a></li>
+                                <li><a href="make-appointment.html">Make Appointment</a></li>
+                                <li><a href="faqs.html">FAQS</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Projects</a>
+                            <ul class="submenu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="project-details.html">Project Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Blog</a>
+                            <ul class="submenu">
+                                <li><a href="blog-all.html">Blog All</a></li>
+                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                                <li><a href="blog-single-left.html">Blog Left</a></li>
+                                <li><a href="blog-single-right.html">Blog Right</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Contact</a>
+                            <ul class="submenu">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact-v2.html">Contact V2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Info Business Only Show On Mobile Devices -->
+                    <div class="header-top header-top-on-menu">
+                        <div class="header-top-left">
+                            <h4><span><img src="./assets/images/icon-svg/location.svg" alt="location"></span> 3972
+                                Westheimer Rd, Canada</h4>
+                            <h4><span><img src="./assets/images/icon-svg/clock.svg" alt="time"></span> Mon- Fri : 09:30
+                                am - 06:30 pm</h4>
+                        </div>
+                        <div class="header-top-right">
+                            <a href="mailto:nexigen@gmail.com"><span><img src="./assets/images/icon-svg/envelop.svg"
+                                                                          alt="mail"></span> nexigen@gmail.com</a>
+                            <ul>
+                                <li><a href="#"><img src="./assets/images/icon-svg/facebook.svg" alt="facebook"></a>
+                                </li>
+                                <li><a href="#"><img src="./assets/images/icon-svg/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./assets/images/icon-svg/linkedin.svg" alt="linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="header-right">
+                    <a href="#" class="btn-search"><img src="./assets/images/icon-svg/search02.svg" alt="search"></a>
+                    <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- =====================
+    Nexigen Hero
+====================== -->
+<section class="hero-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 order-md-0 order-1">
+                <div class="hero-v3-left">
+                    <h4>Welcome to NexiGen</h4>
+                    <h1>Solutions for <br class="d-xl-block d-none"> every organization</h1>
+                    <p>If your company is facing financial challenges, struggling with operations, or looking to expand,
+                        we can help identify the root cause of the problem and develop a strategic plan to address
+                        it.</p>
+                    <div class="btns-hero">
+                        <a href="about-us.html" class="btn-secondary">Discover More</a>
+                        <a href="#" class="btn-video btn-video-v3 play-3">
+                            <span><i class="bi bi-play-fill"></i></span> How we work
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-md-1 order-0">
+                <div class="hero-v3-right">
+                    <div class="hero-top-animation">
+                        <img class="fadeInLeft wow" data-wow-duration="2s" data-wow-delay="2s"
+                             src="./assets/images/home/hero-v3-01.png" alt="">
+                        <img src="./assets/images/home/hero-v3-02.png" alt="">
+                        <img src="./assets/images/home/hero-v3-03.png" alt="">
+                        <img class="fadeInUp wow" data-wow-duration="2s" data-wow-delay="2s"
+                             src="./assets/images/home/hero-v3-04.png" alt="">
+                    </div>
+                    <img src="./assets/images/home/hero-v3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================
+     Nexigen Service Overview
+ ============================ -->
+<section class="service-v3-overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="service-box-v3">
+                    <div>
+                        <h3>Business Consulting</h3>
+                        <p>We provide the best services to ensure the high-level success of your business</p>
+                    </div>
+                    <div>
+                        <a href="services-detail.html" class="btn-go"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="service-box-v3">
+                    <div>
+                        <h3>Financial Planning</h3>
+                        <p>We provide the best services to ensure the high-level success of your business</p>
+                    </div>
+                    <div>
+                        <a href="services-detail.html" class="btn-go"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="service-box-v3">
+                    <div>
+                        <h3>Marketing Research</h3>
+                        <p>We provide the best services to ensure the high-level success of your business</p>
+                    </div>
+                    <div>
+                        <a href="services-detail.html" class="btn-go"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =================
+    Nexigen About US
+=================== -->
+<section class="about-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-v3-left">
+                    <div class="about-v3-slide owl-carousel">
+                        <img src="./assets/images/home/about-us01.png" alt="">
+                        <img src="./assets/images/home/about-us01.png" alt="">
+                        <img src="./assets/images/home/about-us01.png" alt="">
+                    </div>
+                    <div class="about-v3-exp">
+                        <div>
+                            <h3><span>25</span> <sup>+</sup> Years experience our company</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-right about-right-v3">
+                    <h4>about us</h4>
+                    <h2>Our skilled team <br class="d-lg-block d-md-none">
+                        grow your business</h2>
+                    <p>We are specializes in helping companies accelerate their growth through expert guidance,
+                        strategic planning, and implementation support.</p>
+                    <ul>
+                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Performing market
+                            research
+                        </li>
+                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Providing
+                            information to a client
+                        </li>
+                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Strategic planning
+                        </li>
+                    </ul>
+                    <a href="about-us.html" class="btn-secondary">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================
+    Latest Project
+====================== -->
+<section class="latest-project latest-project-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-common">
+                    <h4>latest projects</h4>
+                    <h2>Our Consulting Success</h2>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="single-project single-project-v3">
+                    <img src="./assets/images/home/project01.png" alt="">
+                    <div class="project-title">
+                        <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
+                        <h3>Business Consulting</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="single-project single-project-v3">
+                    <img src="./assets/images/home/project02.png" alt="">
+                    <div class="project-title">
+                        <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
+                        <h3>Business Consulting</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="single-project single-project-v3">
+                    <img src="./assets/images/home/latest-project-v3-01.png" alt="">
+                    <div class="project-title">
+                        <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
+                        <h3>Business Consulting</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================
+    Why Choose US
+====================== -->
+<section class="why-choose-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="why-v3-left">
+                    <img class="indicate-v3" src="./assets/images/home/arrow-indicate03.png" alt="">
+                    <div class="heading-common heading-common-left">
+                        <h4>why choose us</h4>
+                        <h2>Consultant <br class="d-lg-block d-none"> reputation matters</h2>
+                    </div>
+                    <p>The reputation of a consultant is a critical factor in their success. A consultant's reputation
+                        is built on their past work, the feedback from their clients, and the opinions of their peers in
+                        the industry</p>
+                    <div class="have-ques">
+                        <img src="./assets/images/icon-svg/conversation.svg" alt="">
+                        <h4>Have any question?</h4>
+                    </div>
+                    <div class="click-faq">
+                        <p><a href="faqs.html">Click here</a>FAQS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="why-v3-right">
+                    <div class="team-count">
+                        <h4 class="counter">1.289</h4>
+                        <p>Our Expert Team</p>
+                    </div>
+                    <div class="team-img">
+                        <img src="./assets/images/home/team.png" alt="">
+                        <span class="play-3"><i class="bi bi-play-fill"></i></span>
+                    </div>
+
+                    <img class="waves" src="./assets/images/home/hero-v3-04.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============
+    Our Services
+=============== -->
+<section class="services-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-common">
+                    <h4>Our Services</h4>
+                    <h2>Consulting Services</h2>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-consulting-wrap">
+                    <div class="single-consulting single-consulting01">
+                        <h4>Business Consulting</h4>
+                    </div>
+                    <a href="services-detail.html">Know More <span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-consulting-wrap">
+                    <div class="single-consulting single-consulting02">
+                        <h4>Financial Planning</h4>
+                    </div>
+                    <a href="#">Know More <span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-consulting-wrap">
+                    <div class="single-consulting single-consulting03">
+                        <h4>Insurance Consulting</h4>
+                    </div>
+                    <a href="services-detail.html">Know More <span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-consulting-wrap">
+                    <div class="single-consulting single-consulting04">
+                        <h4>Marketing Research</h4>
+                    </div>
+                    <a href="services-detail.html">Know More <span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============
+    Our Team
+=============== -->
+<section class="team-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-common">
+                    <h4>our team</h4>
+                    <h2>Meet our experts</h2>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-team-v3">
+                    <img src="./assets/images/home/team01.png" alt="">
+                    <div class="info-team-v3">
+                        <div class="team-v3-left">
+                            <ul>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                            </ul>
+                        </div>
+                        <a href="team-single.html" class="team-v3-right">
+                            <h3>Maya Patel</h3>
+                            <h4>Marketing Manager</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-team-v3">
+                    <img src="./assets/images/home/team02.png" alt="">
+                    <div class="info-team-v3">
+                        <div class="team-v3-left">
+                            <ul>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                            </ul>
+                        </div>
+                        <a href="team-single.html" class="team-v3-right">
+                            <h3>Jacob Wright</h3>
+                            <h4>Project Manager</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-team-v3">
+                    <img src="./assets/images/home/team03.png" alt="">
+                    <div class="info-team-v3">
+                        <div class="team-v3-left">
+                            <ul>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                <li><a href="#" target="_blank"><span><img
+                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                            </ul>
+                        </div>
+                        <a href="team-single.html" class="team-v3-right">
+                            <h3>Zash Jen</h3>
+                            <h4>HR Coordinator</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================
+    Clinets Feedback
+==================== -->
+<section class="client-feedback-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="feedback-v3-left">
+                    <div class="heading-common heading-common-left">
+                        <h4>Our Testimonial</h4>
+                        <h2>Clients Feedback </h2>
+                    </div>
+                    <p>Customer feedback on our services is crucial to our success. It helps us understand what we're
+                        doing well and where we need to improve.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="feedback-v3-slide owl-carousel">
+                    <div class="feedback-v3-right">
+                        <img class="quote-v3" src="./assets/images/icon-svg/quote01.svg" alt="">
+                        <div class="feedback-wrap-top">
+                            <div class="feedback-inner-lf">
+                                <img src="./assets/images/home/testimonial01.png" alt="">
+                                <h4>Jason L. Guidry</h4>
+                                <h5>CEO at designernews</h5>
+                            </div>
+                            <div class="feedback-inner-rs">
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <p>“Your team was highly professional and knowledgeable, and was able to provide valuable
+                            insights and recommendations that helped us address some of our biggest challenges ”</p>
+                    </div>
+                    <div class="feedback-v3-right">
+                        <img class="quote-v3" src="./assets/images/icon-svg/quote01.svg" alt="">
+                        <div class="feedback-wrap-top">
+                            <div class="feedback-inner-lf">
+                                <img src="./assets/images/home/testimonial01.png" alt="">
+                                <h4>Jason L. Guidry</h4>
+                                <h5>CEO at designernews</h5>
+                            </div>
+                            <div class="feedback-inner-rs">
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <p>“Your team was highly professional and knowledgeable, and was able to provide valuable
+                            insights and recommendations that helped us address some of our biggest challenges ”</p>
+                    </div>
+                    <div class="feedback-v3-right">
+                        <img class="quote-v3" src="./assets/images/icon-svg/quote01.svg" alt="">
+                        <div class="feedback-wrap-top">
+                            <div class="feedback-inner-lf">
+                                <img src="./assets/images/home/testimonial01.png" alt="">
+                                <h4>Jason L. Guidry</h4>
+                                <h5>CEO at designernews</h5>
+                            </div>
+                            <div class="feedback-inner-rs">
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                                <span><img src="./assets/images/icon-svg/star.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <p>“Your team was highly professional and knowledgeable, and was able to provide valuable
+                            insights and recommendations that helped us address some of our biggest challenges ”</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================
+    From The Blog
+====================== -->
+<section class="blogs blogs-v3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-common">
+                    <h4>OUR LATEST NEWS</h4>
+                    <h2>Our latest updates</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="blog-bottom-slide-v3 owl-carousel">
+                    <div class="single-blog-info single-blog-info-v3">
+                        <div class="blog-img">
+                            <img src="./assets/images/home/blog05.png" alt="">
+                        </div>
+                        <div class="blog-card-desc">
+                            <div class="blog-card-top">
+                                <div class="blog-category">
+                                    <h5>Branding</h5>
+                                </div>
+                                <div class="blog-publish-time">
+                                    <h5><span><img src="./assets/images/icon-svg/clock-outline.svg" alt="clock"></span>
+                                        April 2, 2023</h5>
+                                </div>
+                            </div>
+                            <h3>How to collaborate with companies</h3>
+                            <a href="blog-single-right.html">Read More <span><img
+                                    src="./assets/images/icon-svg/arrow-circle.svg" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="single-blog-info single-blog-info-v3">
+                        <div class="blog-img">
+                            <img src="./assets/images/home/blog06.png" alt="">
+                        </div>
+                        <div class="blog-card-desc">
+                            <div class="blog-card-top">
+                                <div class="blog-category">
+                                    <h5>Marketing</h5>
+                                </div>
+                                <div class="blog-publish-time">
+                                    <h5><span><img src="./assets/images/icon-svg/clock-outline.svg" alt="clock"></span>
+                                        April 2, 2023</h5>
+                                </div>
+                            </div>
+                            <h3>We develop effective marketing</h3>
+                            <a href="blog-single-right.html">Read More <span><img
+                                    src="./assets/images/icon-svg/arrow-circle.svg" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="single-blog-info single-blog-info-v3">
+                        <div class="blog-img">
+                            <img src="./assets/images/home/blog04.png" alt="">
+                        </div>
+                        <div class="blog-card-desc">
+                            <div class="blog-card-top">
+                                <div class="blog-category">
+                                    <h5>Financial</h5>
+                                </div>
+                                <div class="blog-publish-time">
+                                    <h5><span><img src="./assets/images/icon-svg/clock-outline.svg" alt="clock"></span>
+                                        April 2, 2023</h5>
+                                </div>
+                            </div>
+                            <h3>Guidance on financial management</h3>
+                            <a href="blog-single-right.html">Read More <span><img
+                                    src="./assets/images/icon-svg/arrow-circle.svg" alt=""></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================
+    Footer
+====================== -->
+<footer class="footer-main footer-main-v3">
+    <div class="stay-connected-v3">
+        <div class="container">
+            <div class="row d-flex align-items-center connected-v3-bg">
+                <div class="col-lg-6">
+                    <div class="connected-v3-lf">
+                        <h2>Stay Connected</h2>
+                        <p>Get Notifications <span><img src="./assets/images/icon-svg/bell.svg" alt=""></span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="connected-v3-rs">
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Email address">
+                            <button><img src="./assets/images/icon-svg/arrow-right.svg" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="round-shape">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-wrap footer-wrap-v3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-left">
+                                    <div class="footer-logo">
+                                        <img src="./assets/images/logo.svg" alt="">
+                                    </div>
+                                    <p>We are dedicated to helping you achieve your business goals and overcome any
+                                        challenges that may arise.</p>
+                                    <div class="footer-follow">
+                                        <h3>Follow us</h3>
+                                        <ul>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 offset-lg-1 col-md-3">
+                                <div class="footer-page-link">
+                                    <h3>Explore</h3>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="about-us.html">Testimonial</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="blog-all.html">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3">
+                                <div class="footer-page-link">
+                                    <h3>Quick Links</h3>
+                                    <ul>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="our-team.html">Our Team</a></li>
+                                        <li><a href="our-team-v2.html">Supports</a></li>
+                                        <li><a href="faqs.html">FAQ</a></li>
+                                        <li><a href="contact.html">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5">
+                                <div class="footer-right">
+                                    <h3>Contact US</h3>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><a href="tel:956643332221"><span><img
+                                                    src="./assets/images/icon-svg/phone.svg" alt=""></span> +95 664 333
+                                                2221</a></li>
+                                            <li><a href="mailto:nexigen@gmail.com"><span><img
+                                                    src="./assets/images/icon-svg/envlope.svg" alt=""></span>
+                                                nexigen@gmail.com</a></li>
+                                            <li><a href="https://www.google.com/maps" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/location-yellow.svg" alt=""></span>
+                                                3972 Westheimer Rd, Canada</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-6 col-md-6 order-md-0 order-1">
+                                <div class="copyright-left">
+                                    <p>&copy; Copyright 2023 By <a href="http://www.bootstrapmb.com">Reserved</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 order-md-1 order-0">
+                                <div class="copyright-right">
+                                    <ul>
+                                        <li><a href="#">Privacy and Terms</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Languanges</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<script src="./assets/js/jquery-3.6.2.min.js"></script>
+<!-- Bootstrap Popper JS -->
+<script src="./assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Video Modal JS -->
+<script src="./assets/js/jquery.yu2fvl.js"></script>
+<!-- Wow JS -->
+<script src="./assets/js/wow.js"></script>
+<!-- Counter JS -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.2.0.3.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<!-- Main JS -->
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
