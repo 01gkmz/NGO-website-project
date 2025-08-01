@@ -5,7 +5,7 @@ from . import main_bp
 
 @main_bp.route('/')
 def index():
-    return render_template('index2.html')
+    return render_template('index-v3.html')
 
 
 @main_bp.route('/main.upload', methods=['POST', 'GET'])
