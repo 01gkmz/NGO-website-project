@@ -31,9 +31,9 @@
 </head>
 
 <body>
-<!--    &lt;!&ndash; ================-->
-<!--        Loading Window-->
-<!--    ================= &ndash;&gt;-->
+    <!-- ================
+        Loading Window
+    ================= -->
 <!--    <div class="nexigen-loading">-->
 <!--        <div class="lds-ripple"><div></div><div></div></div>-->
 <!--    </div>-->
@@ -134,6 +134,8 @@
                                 <li><a href="contact-v2.html">Contact V2</a></li>
                             </ul>
                         </li>
+                        <li><a href="{{ url_for('main.donate') }}">Donate</a>
+                        </li>
                     </ul>
                     <!-- Info Business Only Show On Mobile Devices -->
                     <div class="header-top header-top-on-menu">
@@ -144,13 +146,13 @@
                                 am - 06:30 pm</h4>
                         </div>
                         <div class="header-top-right">
-                            <a href="mailto:nexigen@gmail.com"><span><img src="./static/images/icon-svg/envelop.svg"
+                            <a href="mailto:nexigen@gmail.com"><span><img src="{{ url_for('static', filename='images/icon-svg/envelop.svg') }}"
                                                                           alt="mail"></span> nexigen@gmail.com</a>
                             <ul>
-                                <li><a href="#"><img src="./static/images/icon-svg/facebook.svg" alt="facebook"></a>
+                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/facebook.svg') }}" alt="facebook"></a>
                                 </li>
-                                <li><a href="#"><img src="./static/images/icon-svg/twitter.svg" alt="twitter"></a></li>
-                                <li><a href="#"><img src="./static/images/icon-svg/linkedin.svg" alt="linkedin"></a>
+                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/twitter.svg') }}" alt="twitter"></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/linkedin.svg') }}" alt="linkedin"></a>
                                 </li>
                             </ul>
                         </div>
@@ -192,13 +194,13 @@
                 <div class="hero-v3-right">
                     <div class="hero-top-animation">
                         <img class="fadeInLeft wow" data-wow-duration="2s" data-wow-delay="2s"
-                             src="./assets/images/home/hero-v3-01.png" alt="">
-                        <img src="./assets/images/home/hero-v3-02.png" alt="">
-                        <img src="./assets/images/home/hero-v3-03.png" alt="">
+                             src="{{ url_for('static', filename='images/home/hero-v3-01.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/home/hero-v3-02.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/home/hero-v3-03.png') }}" alt="">
                         <img class="fadeInUp wow" data-wow-duration="2s" data-wow-delay="2s"
-                             src="./assets/images/home/hero-v3-04.png" alt="">
+                             src="{{ url_for('static', filename='images/home/hero-v3-04.png') }}" alt="">
                     </div>
-                    <img src="./assets/images/home/hero-v3.png" alt="">
+                    <img src="{{ url_for('static', filename='images/home/hero-v3.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -257,9 +259,9 @@
             <div class="col-lg-6">
                 <div class="about-v3-left">
                     <div class="about-v3-slide owl-carousel">
-                        <img src="./assets/images/home/about-us01.png" alt="">
-                        <img src="./assets/images/home/about-us01.png" alt="">
-                        <img src="./assets/images/home/about-us01.png" alt="">
+                        <img src="{{ url_for('static', filename='images/home/about-us01.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/home/about-us01.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/home/about-us01.png') }}" alt="">
                     </div>
                     <div class="about-v3-exp">
                         <div>
@@ -276,13 +278,13 @@
                     <p>We are specializes in helping companies accelerate their growth through expert guidance,
                         strategic planning, and implementation support.</p>
                     <ul>
-                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Performing market
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Performing market
                             research
                         </li>
-                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Providing
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Providing
                             information to a client
                         </li>
-                        <li><span><img src="./assets/images/icon-svg/sign-circle.svg" alt=""></span> Strategic planning
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Strategic planning
                         </li>
                     </ul>
                     <a href="about-us.html" class="btn-secondary">Discover More</a>
@@ -306,25 +308,7 @@
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="single-project single-project-v3">
-                    <img src="./assets/images/home/project01.png" alt="">
-                    <div class="project-title">
-                        <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
-                        <h3>Business Consulting</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="single-project single-project-v3">
-                    <img src="./assets/images/home/project02.png" alt="">
-                    <div class="project-title">
-                        <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
-                        <h3>Business Consulting</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="single-project single-project-v3">
-                    <img src="./assets/images/home/latest-project-v3-01.png" alt="">
+                    <img src="{{ url_for('static', filename='images/home/project01.png') }}" alt="">
                     <div class="project-title">
                         <a href="project-details.html"><i class="bi bi-box-arrow-up-right"></i></a>
                         <h3>Business Consulting</h3>
@@ -343,7 +327,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="why-v3-left">
-                    <img class="indicate-v3" src="./assets/images/home/arrow-indicate03.png" alt="">
+                    <img class="indicate-v3" src="{{ url_for('static', filename='images/home/arrow-indicate03.png') }}" alt="">
                     <div class="heading-common heading-common-left">
                         <h4>why choose us</h4>
                         <h2>Consultant <br class="d-lg-block d-none"> reputation matters</h2>
@@ -367,11 +351,11 @@
                         <p>Our Expert Team</p>
                     </div>
                     <div class="team-img">
-                        <img src="./assets/images/home/team.png" alt="">
+                        <img src="{{ url_for('static', filename='images/home/team.png') }}" alt="">
                         <span class="play-3"><i class="bi bi-play-fill"></i></span>
                     </div>
 
-                    <img class="waves" src="./assets/images/home/hero-v3-04.png" alt="">
+                    <img class="waves" src="{{ url_for('static', filename='images/home/hero-v3-04.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -440,16 +424,16 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="single-team-v3">
-                    <img src="./assets/images/home/team01.png" alt="">
+                    <img src="{{ url_for('static', filename='images/home/team01.png') }}" alt="">
                     <div class="info-team-v3">
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">
@@ -466,11 +450,11 @@
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">
@@ -487,11 +471,11 @@
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">

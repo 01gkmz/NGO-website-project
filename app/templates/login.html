@@ -30,16 +30,6 @@
 </head>
 
 <body>
-<!-- ================
-    Loading Window
-================= -->
-<!--    <div class="nexigen-loading">-->
-<!--        <div class="lds-ripple"><div></div><div></div></div>-->
-<!--    </div>-->
-
-<!-- ============
-    Get In Touch
-============== -->
 <section class="contact-v2">
     <div class="container">
         <div class="row">
@@ -70,13 +60,15 @@
             </div>
             <div class="col-lg-6">
                 <div class="get-contact-left">
-                    <form method="post" action="#">
+                    <form method="post" action="{{ url_for('auth.login') }}">
+                        {{ form.hidden_tag() }}
                         <input type="text" name="username" id="username" placeholder="Username" required>
                         <input type="text" name="password" id="password" placeholder="Password" required>
-                        <button type="submit" class="btn-secondary btn-get-touch">Login</button>
+                        <button type="submit" value="login" class="btn-secondary btn-get-touch">Login</button>
                     </form>
                 </div>
-                <div style="color: white; text-align: right">Don't have an account? <a href="{{ url_for('auth.register') }}">Click Here</a></div>
+                <div style="color: white; text-align: right">Don't have an account? <a
+                        href="{{ url_for('auth.register') }}">Click Here</a></div>
             </div>
         </div>
     </div>

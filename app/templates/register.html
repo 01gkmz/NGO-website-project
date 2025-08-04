@@ -28,18 +28,7 @@
     <!-- Responsive Style CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
-
 <body>
-<!-- ================
-    Loading Window
-================= -->
-<!--    <div class="nexigen-loading">-->
-<!--        <div class="lds-ripple"><div></div><div></div></div>-->
-<!--    </div>-->
-
-<!-- ============
-    Get In Touch
-============== -->
 <section class="contact-v2">
     <div class="container">
         <div class="row">
@@ -70,19 +59,22 @@
             </div>
             <div class="col-lg-6">
                 <div class="get-contact-left">
-                    <form method="post" action="#">
+                    <form method="post" action="{{ url_for('auth.register') }}">
+                        {{ form.hidden_tag() }}
                         <input type="text" name="username" id="username" placeholder="Username" required>
                         <input type="text" name="password" id="password" placeholder="Password" required>
-                        <input type="email" placeholder="Email address" required>
-                        <input type="tel" placeholder="Phone number" required>
+                        <input type="text" name="confirm" id="confirm" placeholder="Enter password again" required>
+                        <input type="email" name="email" id="email" placeholder="Email address" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
                         <label for="check">
                             <input type="checkbox" name="check" id="check">
                             by clicking here you agree to our <a href="#">terms and policy.</a>
                         </label>
-                        <button type="submit" class="btn-secondary btn-get-touch">Register</button>
+                        <button type="submit" value="register" class="btn-secondary btn-get-touch">Register</button>
                     </form>
                 </div>
-                <div style="color: white; text-align: right">Already have account? <a href="{{ url_for('auth.login') }}">Click Here</a></div>
+                <div style="color: white; text-align: right">Already have account? <a
+                        href="{{ url_for('auth.login') }}">Click Here</a></div>
             </div>
         </div>
     </div>

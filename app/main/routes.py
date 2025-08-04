@@ -5,5 +5,9 @@ main_bp = Blueprint('main', __name__, url_prefix='/main')
 
 @main_bp.route('/index')
 def index():
-    print("Hello")
     return render_template('index.html')
+
+
+@main_bp.route('/donate')
+def donate():
+    return render_template('donate.html')
