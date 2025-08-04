@@ -27,4 +27,3 @@ def upload():
 def show():
     users = User.query.all()
     return '<br>'.join([f'{user.name} - {user.email} - {user.phone}' for user in users])
-
