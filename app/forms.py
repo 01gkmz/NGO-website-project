@@ -13,5 +13,7 @@ class LoginForm(FlaskForm):
 class RegisterForm(FlaskForm):
     username = StringField('用户名', validators=[DataRequired()])
     password = PasswordField('密码', validators=[DataRequired()])
+    email_addr = StringField('邮箱', validators=[DataRequired()])
+    phone_number = StringField('电话号码', validators=[DataRequired()])
     confirm = PasswordField('确认密码', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('注册')

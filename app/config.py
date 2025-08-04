@@ -2,3 +2,4 @@ class Config:
     SECRET_KEY = '8d2c7715b2e1d5e99e7f83e49baf1d9d38e7e56b8f7e839a88cb2b9d37b7f4a9'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///data.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    TEMPLATES_AUTO_RELOAD = True

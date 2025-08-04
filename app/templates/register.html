@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon Site -->
-    <link rel="shortcut icon" href="./static/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,21 @@
     <!-- Title -->
     <title>Nexigen - Home V3</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <!-- Bootstrap Icon CSS -->
-    <link rel="stylesheet" href="./static/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons-1.10.4/font/bootstrap-icons.css') }}">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="./static/css/animate.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
     <!-- Video Modal CSS -->
-    <link rel="stylesheet" href="./static/css/jquery.yu2fvl.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.yu2fvl.css') }}">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="./static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Responsive Style CSS -->
-    <link rel="stylesheet" href="./static/css/responsive.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
+
 <body>
 <!-- ================
     Loading Window
@@ -81,28 +82,29 @@
                         <button type="submit" class="btn-secondary btn-get-touch">Register</button>
                     </form>
                 </div>
-                <div style="color: white; text-align: right">Already have account? <a href="{{ url_for('main.login') }}">Click Here</a></div>
+                <div style="color: white; text-align: right">Already have account? <a href="{{ url_for('auth.login') }}">Click Here</a></div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- jQuery -->
-<script src="./static/js/jquery-3.6.2.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery-3.6.2.min.js') }}"></script>
 <!-- Bootstrap Popper JS -->
-<script src="./static/js/popper.min.js"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <!-- Bootstrap JS -->
-<script src="./static/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <!-- Video Modal JS -->
-<script src="./static/js/jquery.yu2fvl.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.yu2fvl.js') }}"></script>
 <!-- Wow JS -->
-<script src="./static/js/wow.js"></script>
+<script src="{{ url_for('static', filename='js/wow.js') }}"></script>
 <!-- Counter JS -->
-<script src="./static/js/jquery.counterup.min.js"></script>
-<script src="./static/js/waypoints.2.0.3.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src=" {{ url_for('static', filename='js/waypoints.2.0.3.min.js') }}"></script>
 <!-- Owl Carousel JS -->
-<script src="./static/js/owl.carousel.min.js"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
 <!-- Main JS -->
-<script src="./static/js/main.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon Site -->
-    <link rel="shortcut icon" href="./static/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +15,19 @@
     <!-- Title -->
     <title>Nexigen - Home V3</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <!-- Bootstrap Icon CSS -->
-    <link rel="stylesheet" href="./static/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons-1.10.4/font/bootstrap-icons.css') }}">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="./static/css/animate.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
     <!-- Video Modal CSS -->
-    <link rel="stylesheet" href="./static/css/jquery.yu2fvl.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.yu2fvl.css') }}">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="./static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Responsive Style CSS -->
-    <link rel="stylesheet" href="./static/css/responsive.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a href="index.html">
-                            <img src="./static/images/logo-v2.svg" alt="nexigen">
+                            <img src="{{ url_for('static', filename='images/logo-v2.svg') }}" alt="nexigen">
                         </a>
                     </div>
                     <!-- Mobile Hamburger Menu -->
@@ -83,7 +83,9 @@
                     </div>
                     <!-- Only Show On Mobile Devices -->
                     <div class="appointment-mobile">
-                        <a href="#" class="btn-search"><img src="./static/images/icon-svg/search.svg" alt="search"></a>
+                        <a href="#" class="btn-search">
+                            <img src="{{ url_for('static', filename='images/icon-svg/search.svg') }}"  alt="search">
+                        </a>
                         <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
                     </div>
                     <!-- Menu -->
@@ -136,9 +138,9 @@
                     <!-- Info Business Only Show On Mobile Devices -->
                     <div class="header-top header-top-on-menu">
                         <div class="header-top-left">
-                            <h4><span><img src="./static/images/icon-svg/location.svg" alt="location"></span> 3972
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/location.svg') }}" alt="location"></span> 3972
                                 Westheimer Rd, Canada</h4>
-                            <h4><span><img src="./static/images/icon-svg/clock.svg" alt="time"></span> Mon- Fri : 09:30
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/clock.svg')}}" alt="time"></span> Mon- Fri : 09:30
                                 am - 06:30 pm</h4>
                         </div>
                         <div class="header-top-right">
@@ -157,8 +159,8 @@
             </div>
             <div class="col-lg-3">
                 <div class="header-right">
-                    <a href="#" class="btn-search"><img src="./static/images/icon-svg/search02.svg" alt="search"></a>
-                    <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
+                    <a href="#" class="btn-search"><img src=" {{ url_for('static', filename='images/icon-svg/search02.svg')}}" alt="search"></a>
+                    <a href="{{ url_for('auth.login') }}" class="btn-primary">Join us</a>
                 </div>
             </div>
         </div>
@@ -789,22 +791,22 @@
 
 
 <!-- jQuery -->
-<script src="./assets/js/jquery-3.6.2.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery-3.6.2.min.js') }}"></script>
 <!-- Bootstrap Popper JS -->
-<script src="./assets/js/popper.min.js"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <!-- Bootstrap JS -->
-<script src="./assets/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <!-- Video Modal JS -->
-<script src="./assets/js/jquery.yu2fvl.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.yu2fvl.js') }}"></script>
 <!-- Wow JS -->
-<script src="./assets/js/wow.js"></script>
+<script src="{{ url_for('static', filename='js/wow.js') }}"></script>
 <!-- Counter JS -->
-<script src="./assets/js/jquery.counterup.min.js"></script>
-<script src="./assets/js/waypoints.2.0.3.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src=" {{ url_for('static', filename='js/waypoints.2.0.3.min.js') }}"></script>
 <!-- Owl Carousel JS -->
-<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
 <!-- Main JS -->
-<script src="./assets/js/main.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>
