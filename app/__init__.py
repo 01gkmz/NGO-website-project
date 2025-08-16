@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect, url_for
 from .config import Config
 from .extensions import db
 from .models.user import User
@@ -10,6 +10,10 @@ def create_app():
     app = Flask(__name__)
 
     app.config.from_object(Config)
+
+    @app.route('/')
+    def index():
+        return redirect(url_for('main.index'))
 
     from .main.routes import main_bp
     app.register_blueprint(main_bp)

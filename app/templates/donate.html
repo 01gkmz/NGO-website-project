@@ -5,321 +5,322 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon Site -->
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <!-- Title -->
-    <title>Nexigen - Contact V2</title>
+    <title>Nexigen - Home V3</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <!-- Bootstrap Icon CSS -->
-    <link rel="stylesheet" href="./assets/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons-1.10.4/font/bootstrap-icons.css') }}">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
     <!-- Video Modal CSS -->
-    <link rel="stylesheet" href="./assets/css/jquery.yu2fvl.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.yu2fvl.css') }}">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Responsive Style CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
 <body>
-    <!-- ================
-        Loading Window
-    ================= -->
-    <div class="nexigen-loading">
-        <div class="lds-ripple"><div></div><div></div></div>
-    </div>
-    
-    <!-- =====================
-        Nexigen Search Popup
-    ====================== -->
-    <div class="search-popup">
-        <button class="close-search">
-            <i class="bi bi-x-circle"></i>
-        </button>
-        <form method="post" action="#">
-            <div class="form-group">
-                <input type="search" name="search" placeholder="Search Here" required>
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-        </form>
-    </div>
+<!-- ================
+    Loading Window
+================= -->
+<!--<div class="nexigen-loading">-->
+<!--    <div class="lds-ripple">-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--    </div>-->
+<!--</div>-->
 
-    <!-- =====================
-        Nexigen Header Top
-    ====================== -->
-    <section class="header-top">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="header-top-left">
-                        <h4><span><img src="./assets/images/icon-svg/location.svg" alt="location"></span> 3972 Westheimer Rd, Canada</h4>
-                        <h4><span><img src="./assets/images/icon-svg/clock.svg" alt="time"></span> Mon- Fri : 09:30 am - 06:30 pm</h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="header-top-right">
-                        <a href="mailto:nexigen@gmail.com"><span><img src="./assets/images/icon-svg/envelop.svg" alt="mail"></span> nexigen@gmail.com</a>
-                        <ul>
-                            <li><a href="#"><img src="./assets/images/icon-svg/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="#"><img src="./assets/images/icon-svg/twitter.svg" alt="twitter"></a></li>
-                            <li><a href="#"><img src="./assets/images/icon-svg/linkedin.svg" alt="linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!-- =====================
+    Nexigen Search Popup
+====================== -->
+<div class="search-popup">
+    <button class="close-search">
+        <i class="bi bi-x-circle"></i>
+    </button>
+    <form method="post" action="#">
+        <div class="form-group">
+            <input type="search" name="search" placeholder="Search Here" required>
+            <button>
+                <i class="bi bi-search"></i>
+            </button>
         </div>
-    </section>
+    </form>
+</div>
 
-    <!-- =====================
-        Nexigen Header Menu
-    ====================== -->
-    <header id="sticky-header">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-2">
-                    <div class="mobile-flex">
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="./assets/images/logo.svg" alt="nexigen">
-                            </a>
-                        </div>
-                        <!-- Mobile Hamburger Menu -->
-                        <div class="hamburger-menu">
-                            <i class="bi bi-list"></i>
-                        </div>
+<!-- =====================
+    Nexigen Header Menu
+====================== -->
+<header id="sticky-header" class="header-v3">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-2">
+                <div class="mobile-flex">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{{ url_for('static', filename='images/logo-v2.svg') }}" alt="nexigen">
+                        </a>
+                    </div>
+                    <!-- Mobile Hamburger Menu -->
+                    <div class="hamburger-menu hamburger-menu-v2">
+                        <i class="bi bi-list"></i>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="header-menu">
-                        <!-- Mobile Menu Close Button -->
-                        <div class="close-btn">
-                            <i class="bi bi-x"></i>
-                        </div>
-                        <!-- Only Show On Mobile Devices -->
-                        <div class="appointment-mobile">
-                            <a href="#" class="btn-search"><img src="./assets/images/icon-svg/search.svg" alt="search"></a>
-                            <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
-                        </div>
-                        <!-- Menu -->
-                        <ul>
-                            <li><a class="sub-btn" href="#">Home</a>
+            </div>
+            <div class="col-lg-7">
+                <div class="header-menu">
+                    <!-- Mobile Menu Close Button -->
+                    <div class="close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                    <!-- Only Show On Mobile Devices -->
+                    <div class="appointment-mobile">
+                        <a href="#" class="btn-search">
+                            <img src="{{ url_for('static', filename='images/icon-svg/search.svg') }}" alt="search">
+                        </a>
+                        <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
+                    </div>
+                    <!-- Menu -->
+                    <ul>
+                        <li><a class="sub-btn" href="#">Home</a>
                             <ul class="submenu">
                                 <li><a href="index.html">Home V1</a></li>
                                 <li><a href="index-v2.html">Home V2</a></li>
                                 <li><a href="index-v3.html">Home V3</a></li>
                             </ul>
-                            </li>
-                            <li><a class="sub-btn" href="#">Services</a>
-                                <ul class="submenu">
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-detail.html">Services Detail</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="sub-btn" href="#">Pages</a>
-                                <ul class="submenu">
-                                    <li><a href="about-us.html">About US</a></li>
-                                    <li><a href="our-team.html">Our Team</a></li>
-                                    <li><a href="our-team-v2.html">Our Team V2</a></li>
-                                    <li><a href="team-single.html">Team Single</a></li>
-                                    <li><a href="make-appointment.html">Make Appointment</a></li>
-                                    <li><a href="faqs.html">FAQS</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="sub-btn" href="#">Projects</a>
-                                <ul class="submenu">
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="sub-btn" href="#">Blog</a>
-                                <ul class="submenu">
-                                    <li><a href="blog-all.html">Blog All</a></li>
-                                    <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                    <li><a href="blog-single-left.html">Blog Left</a></li>
-                                    <li><a href="blog-single-right.html">Blog Right</a></li>
-                                </ul>
-                            </li>
-                            <li class="active"><a class="sub-btn" href="#">Contact</a>
-                                <ul class="submenu">
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="contact-v2.html">Contact V2</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!-- Info Business Only Show On Mobile Devices -->
-                        <div class="header-top header-top-on-menu">
-                            <div class="header-top-left">
-                                <h4><span><img src="./assets/images/icon-svg/location.svg" alt="location"></span> 3972 Westheimer Rd, Canada</h4>
-                                <h4><span><img src="./assets/images/icon-svg/clock.svg" alt="time"></span> Mon- Fri : 09:30 am - 06:30 pm</h4>
-                            </div>
-                            <div class="header-top-right">
-                                <a href="mailto:nexigen@gmail.com"><span><img src="./assets/images/icon-svg/envelop.svg" alt="mail"></span> nexigen@gmail.com</a>
-                                <ul>
-                                    <li><a href="#"><img src="./assets/images/icon-svg/facebook.svg" alt="facebook"></a></li>
-                                    <li><a href="#"><img src="./assets/images/icon-svg/twitter.svg" alt="twitter"></a></li>
-                                    <li><a href="#"><img src="./assets/images/icon-svg/linkedin.svg" alt="linkedin"></a></li>
-                                </ul>
-                            </div>
+                        </li>
+                        <li><a class="sub-btn" href="#">Services</a>
+                            <ul class="submenu">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-detail.html">Services Detail</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Pages</a>
+                            <ul class="submenu">
+                                <li><a href="about-us.html">About US</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="our-team-v2.html">Our Team V2</a></li>
+                                <li><a href="team-single.html">Team Single</a></li>
+                                <li><a href="make-appointment.html">Make Appointment</a></li>
+                                <li><a href="faqs.html">FAQS</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Projects</a>
+                            <ul class="submenu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="project-details.html">Project Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Blog</a>
+                            <ul class="submenu">
+                                <li><a href="blog-all.html">Blog All</a></li>
+                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                                <li><a href="blog-single-left.html">Blog Left</a></li>
+                                <li><a href="blog-single-right.html">Blog Right</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sub-btn" href="#">Contact</a>
+                            <ul class="submenu">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact-v2.html">Contact V2</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="{{ url_for('main.donate') }}">Donate</a>
+                        </li>
+                    </ul>
+                    <!-- Info Business Only Show On Mobile Devices -->
+                    <div class="header-top header-top-on-menu">
+                        <div class="header-top-left">
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/location.svg') }}"
+                                           alt="location"></span> 3972
+                                Westheimer Rd, Canada</h4>
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/clock.svg')}}"
+                                           alt="time"></span> Mon- Fri : 09:30
+                                am - 06:30 pm</h4>
+                        </div>
+                        <div class="header-top-right">
+                            <a href="mailto:nexigen@gmail.com"><span><img
+                                    src="{{ url_for('static', filename='images/icon-svg/envelop.svg') }}"
+                                    alt="mail"></span> nexigen@gmail.com</a>
+                            <ul>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook.svg') }}"
+                                        alt="facebook"></a>
+                                </li>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter.svg') }}"
+                                        alt="twitter"></a></li>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin.svg') }}"
+                                        alt="linkedin"></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="header-right">
-                        <a href="#" class="btn-search"><img src="./assets/images/icon-svg/search.svg" alt="search"></a>
-                        <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
-                    </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="header-right">
+                    <a href="#" class="btn-search"><img
+                            src=" {{ url_for('static', filename='images/icon-svg/search02.svg')}}" alt="search"></a>
+                    <a href="{{ url_for('auth.login') }}" class="btn-primary">Join us</a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-     <!-- ================
-        Breadcrumb Common
-    ===================== -->
-    <section class="breadcrubm">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrubm-wrapper">
-                        <img class="anim-services-01" src="./assets/images/home/doddles02.png" alt="">
-                        <img class="anim-services-02" src="./assets/images/home/hero-v3-04.png" alt="">
-                        <h5>Contact Us</h5>
-                        <h3>Contact Information</h3>
-                        <h1 class="breadcrubm-big">Contact</h1>
-                    </div>
+<!-- ================
+   Breadcrumb Common
+===================== -->
+<section class="breadcrubm">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrubm-wrapper">
+                    <img class="anim-services-01" src="./assets/images/home/doddles02.png" alt="">
+                    <img class="anim-services-02" src="./assets/images/home/hero-v3-04.png" alt="">
+                    <h5>Contact Us</h5>
+                    <h3>Contact Information</h3>
+                    <h1 class="breadcrubm-big">Contact</h1>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============
-        Get In Touch
-    ============== -->
-    <section class="contact-option-v2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="contact-v2-box">
-                        <span><img src="./assets/images/icon-svg/phone.svg" alt=""></span>
-                        <h5>Phone Number</h5>
-                        <a href="tel:956643332221">+95 664 333 2221</a>
-                        <a href="tel:957642434221">+95 764 243 4221</a>
-                    </div>
+<!-- ============
+    Get In Touch
+============== -->
+<section class="contact-option-v2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-v2-box">
+                    <span><img src="./assets/images/icon-svg/phone.svg" alt=""></span>
+                    <h5>Phone Number</h5>
+                    <a href="tel:956643332221">+95 664 333 2221</a>
+                    <a href="tel:957642434221">+95 764 243 4221</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="contact-v2-box">
-                        <span><img src="./assets/images/icon-svg/envelop.svg" alt=""></span>
-                        <h5>Email Address</h5>
-                        <a href="mailto:nexigen@gmail.com">nexigen@gmail.com</a>
-                        <a href="mailto:info.next@gmail.com">info.next@gmail.com</a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-v2-box">
+                    <span><img src="./assets/images/icon-svg/envelop.svg" alt=""></span>
+                    <h5>Email Address</h5>
+                    <a href="mailto:nexigen@gmail.com">nexigen@gmail.com</a>
+                    <a href="mailto:info.next@gmail.com">info.next@gmail.com</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="contact-v2-box">
-                        <span><img src="./assets/images/icon-svg/location.svg" alt=""></span>
-                        <h5>Office Address</h5>
-                        <a href="https://www.google.com/maps">3972 Westheimer Rd, Canada</a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-v2-box">
+                    <span><img src="./assets/images/icon-svg/location.svg" alt=""></span>
+                    <h5>Office Address</h5>
+                    <a href="https://www.google.com/maps">3972 Westheimer Rd, Canada</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="contact-v2-box">
-                        <span><img src="./assets/images/icon-svg/clock.svg" alt=""></span>
-                        <h5>Office Hours</h5>
-                        <p>Monday to Friday <br>
-                            09:30 am - 06:30 pm</p>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-v2-box">
+                    <span><img src="./assets/images/icon-svg/clock.svg" alt=""></span>
+                    <h5>Office Hours</h5>
+                    <p>Monday to Friday <br>
+                        09:30 am - 06:30 pm</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============
-       Contact Form
-    ================ -->
-    <section class="contact-form-v2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-form-wrap">
-                        <h4>Feel Free To Contact With Us</h4>
-                        <form action="#">
-                            <div class="contact-group">
-                                <div>
-                                    <input type="text" name="name" placeholder="Name">
-                                </div>
-                                <div>
-                                    <input type="email" name="email" placeholder="Email">
-                                </div>
+<!-- ============
+   Contact Form
+================ -->
+<section class="contact-form-v2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-form-wrap">
+                    <h4>Feel Free To Contact With Us</h4>
+                    <form action="#">
+                        <div class="contact-group">
+                            <div>
+                                <input type="text" name="name" placeholder="Name">
                             </div>
-                            <textarea name="message" placeholder="Write Comment..."></textarea>
-                            <button class="btn-primary btn-contact" type="submit">Submit</button>
+                            <div>
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <textarea name="message" placeholder="Write Comment..."></textarea>
+                        <button class="btn-primary btn-contact" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================
+    Footer
+====================== -->
+<footer class="footer-main footer-main-v3">
+    <div class="stay-connected-v3">
+        <div class="container">
+            <div class="row d-flex align-items-center connected-v3-bg">
+                <div class="col-lg-6">
+                    <div class="connected-v3-lf">
+                        <h2>Stay Connected</h2>
+                        <p>Get Notifications <span><img src="./assets/images/icon-svg/bell.svg" alt=""></span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="connected-v3-rs">
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Email address">
+                            <button><img src="./assets/images/icon-svg/arrow-right.svg" alt=""></button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- ==========
-       Contact US
-    ============== -->
-    <section class="contactv2">
+    </div>
+    <div class="round-shape">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contactv2-inner contactv2-inner-page">
-                        <div class="contactv2-animation">
-                            <img class="anim-contactv2-01" src="./assets/images/home/doddles01.png" alt="">
-                            <img class="anim-contactv2-02" src="./assets/images/home/doddles02.png" alt="">
-                        </div>
-                        <div class="heading-common">
-                            <h4>CONTACT US</h4>
-                            <h2>let’s work on <br class="d-lg-block d-none">
-                                something cool together</h2>
-                            <a href="contact.html" class="contact-circle"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =====================
-        Footer 
-    ====================== -->
-    <footer class="footer-main footer-main-v2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-wrap">
+                    <div class="footer-wrap footer-wrap-v3">
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="footer-left">
                                     <div class="footer-logo">
-                                        <img src="./assets/images/logo-v2.svg" alt="">
+                                        <img src="./assets/images/logo.svg" alt="">
                                     </div>
-                                    <p>We are dedicated to helping you achieve your business goals and overcome any challenges that may arise.</p>
-                                    <div class="footer-contact">
+                                    <p>We are dedicated to helping you achieve your business goals and overcome any
+                                        challenges that may arise.</p>
+                                    <div class="footer-follow">
+                                        <h3>Follow us</h3>
                                         <ul>
-                                            <li><a href="tel:956643332221"><span><img src="./assets/images/icon-svg/phone.svg" alt=""></span> +95 664 333 2221</a></li>
-                                            <li><a href="mailto:nexigen@gmail.com"><span><img src="./assets/images/icon-svg/envlope.svg" alt=""></span> nexigen@gmail.com</a></li>
-                                            <li><a href="https://www.google.com/maps" target="_blank"><span><img src="./assets/images/icon-svg/location-yellow.svg" alt=""></span> 3972 Westheimer Rd, Canada</a></li>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/facebook-blue.svg" alt=""></span></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/twitter-blue.svg" alt=""></span></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/linkedin-blue.svg" alt=""></span></a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3">
+                            <div class="col-lg-2 offset-lg-1 col-md-3">
                                 <div class="footer-page-link">
                                     <h3>Explore</h3>
                                     <ul>
@@ -343,25 +344,21 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-5">
+                            <div class="col-lg-3 col-md-5">
                                 <div class="footer-right">
-                                    <div class="footer-v2-newsletter">
-                                        <h3>Subscribe to our <br>
-                                            newsletter</h3>
-                                        <form action="#">
-                                            <input type="email" placeholder="Email address">
-                                            <button type="submit"><img src="./assets/images/icon-svg/arrow-right.svg" alt=""></button>
-                                        </form>
-                                    </div>
-                                    <h3>Recent Projects</h3>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="footer-project-flex">
-                                                <a href="project-details.html"><img src="./assets/images/home/project-sm-01.png" alt=""></a>
-                                                <a href="project-details.html"><img src="./assets/images/home/project-sm-02.png" alt=""></a>
-                                                <a href="project-details.html"><img src="./assets/images/home/project-sm-03.png" alt=""></a>
-                                            </div>
-                                        </div>
+                                    <h3>Contact US</h3>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><a href="tel:956643332221"><span><img
+                                                    src="./assets/images/icon-svg/phone.svg" alt=""></span> +95 664 333
+                                                2221</a></li>
+                                            <li><a href="mailto:nexigen@gmail.com"><span><img
+                                                    src="./assets/images/icon-svg/envlope.svg" alt=""></span>
+                                                nexigen@gmail.com</a></li>
+                                            <li><a href="https://www.google.com/maps" target="_blank"><span><img
+                                                    src="./assets/images/icon-svg/location-yellow.svg" alt=""></span>
+                                                3972 Westheimer Rd, Canada</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -371,14 +368,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="footer-copyright footer-copyright-v2">
+                    <div class="footer-copyright">
                         <div class="row d-flex align-items-center">
-                            <div class="col-lg-3 col-md-3 ">
+                            <div class="col-lg-6 col-md-6 order-md-0 order-1">
                                 <div class="copyright-left">
                                     <p>&copy; Copyright 2023 By <a href="http://www.bootstrapmb.com">Reserved</a></p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-6 col-md-6 order-md-1 order-0">
                                 <div class="copyright-right">
                                     <ul>
                                         <li><a href="#">Privacy and Terms</a></li>
@@ -387,36 +384,30 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3">
-                                <div class="copyright-social">
-                                    <a href="#"><img src="./assets/images/icon-svg/facebook-gray.svg" alt=""></a>
-                                    <a href="#"><img src="./assets/images/icon-svg/twitter-gray.svg" alt=""></a>
-                                    <a href="#"><img src="./assets/images/icon-svg/linkedin-gray.svg" alt=""></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- jQuery -->
-    <script src="./assets/js/jquery-3.6.2.min.js"></script>
-    <!-- Bootstrap Popper JS -->
-    <script src="./assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Video Modal JS -->
-    <script src="./assets/js/jquery.yu2fvl.js"></script>
-    <!-- Wow JS -->
-    <script src="./assets/js/wow.js"></script>
-    <!-- Counter JS -->
-    <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/waypoints.2.0.3.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <!-- Main JS -->
-    <script src="./assets/js/main.js"></script>
+<!-- jQuery -->
+<script src="{{ url_for('static', filename='js/jquery-3.6.2.min.js') }}"></script>
+<!-- Bootstrap Popper JS -->
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- Video Modal JS -->
+<script src="{{ url_for('static', filename='js/jquery.yu2fvl.js') }}"></script>
+<!-- Wow JS -->
+<script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+<!-- Counter JS -->
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src=" {{ url_for('static', filename='js/waypoints.2.0.3.min.js') }}"></script>
+<!-- Owl Carousel JS -->
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<!-- Main JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

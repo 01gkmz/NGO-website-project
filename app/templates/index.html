@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,14 +28,16 @@
     <!-- Responsive Style CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
-
 <body>
-    <!-- ================
-        Loading Window
-    ================= -->
-<!--    <div class="nexigen-loading">-->
-<!--        <div class="lds-ripple"><div></div><div></div></div>-->
-<!--    </div>-->
+<!-- ================
+    Loading Window
+================= -->
+<div class="nexigen-loading">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
 
 <!-- =====================
     Nexigen Search Popup
@@ -84,7 +85,7 @@
                     <!-- Only Show On Mobile Devices -->
                     <div class="appointment-mobile">
                         <a href="#" class="btn-search">
-                            <img src="{{ url_for('static', filename='images/icon-svg/search.svg') }}"  alt="search">
+                            <img src="{{ url_for('static', filename='images/icon-svg/search.svg') }}" alt="search">
                         </a>
                         <a href="make-appointment.html" class="btn-primary">Make Appointment</a>
                     </div>
@@ -140,19 +141,28 @@
                     <!-- Info Business Only Show On Mobile Devices -->
                     <div class="header-top header-top-on-menu">
                         <div class="header-top-left">
-                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/location.svg') }}" alt="location"></span> 3972
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/location.svg') }}"
+                                           alt="location"></span> 3972
                                 Westheimer Rd, Canada</h4>
-                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/clock.svg')}}" alt="time"></span> Mon- Fri : 09:30
+                            <h4><span><img src="{{ url_for('static', filename='images/icon-svg/clock.svg')}}"
+                                           alt="time"></span> Mon- Fri : 09:30
                                 am - 06:30 pm</h4>
                         </div>
                         <div class="header-top-right">
-                            <a href="mailto:nexigen@gmail.com"><span><img src="{{ url_for('static', filename='images/icon-svg/envelop.svg') }}"
-                                                                          alt="mail"></span> nexigen@gmail.com</a>
+                            <a href="mailto:nexigen@gmail.com"><span><img
+                                    src="{{ url_for('static', filename='images/icon-svg/envelop.svg') }}"
+                                    alt="mail"></span> nexigen@gmail.com</a>
                             <ul>
-                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/facebook.svg') }}" alt="facebook"></a>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook.svg') }}"
+                                        alt="facebook"></a>
                                 </li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/twitter.svg') }}" alt="twitter"></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='images/icon-svg/linkedin.svg') }}" alt="linkedin"></a>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter.svg') }}"
+                                        alt="twitter"></a></li>
+                                <li><a href="#"><img
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin.svg') }}"
+                                        alt="linkedin"></a>
                                 </li>
                             </ul>
                         </div>
@@ -161,7 +171,8 @@
             </div>
             <div class="col-lg-3">
                 <div class="header-right">
-                    <a href="#" class="btn-search"><img src=" {{ url_for('static', filename='images/icon-svg/search02.svg')}}" alt="search"></a>
+                    <a href="#" class="btn-search"><img
+                            src=" {{ url_for('static', filename='images/icon-svg/search02.svg')}}" alt="search"></a>
                     <a href="{{ url_for('auth.login') }}" class="btn-primary">Join us</a>
                 </div>
             </div>
@@ -278,13 +289,16 @@
                     <p>We are specializes in helping companies accelerate their growth through expert guidance,
                         strategic planning, and implementation support.</p>
                     <ul>
-                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Performing market
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span>
+                            Performing market
                             research
                         </li>
-                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Providing
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span>
+                            Providing
                             information to a client
                         </li>
-                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span> Strategic planning
+                        <li><span><img src="{{ url_for('static', filename='images/icon-svg/sign-circle.svg') }}" alt=""></span>
+                            Strategic planning
                         </li>
                     </ul>
                     <a href="about-us.html" class="btn-secondary">Discover More</a>
@@ -327,7 +341,8 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="why-v3-left">
-                    <img class="indicate-v3" src="{{ url_for('static', filename='images/home/arrow-indicate03.png') }}" alt="">
+                    <img class="indicate-v3" src="{{ url_for('static', filename='images/home/arrow-indicate03.png') }}"
+                         alt="">
                     <div class="heading-common heading-common-left">
                         <h4>why choose us</h4>
                         <h2>Consultant <br class="d-lg-block d-none"> reputation matters</h2>
@@ -429,11 +444,14 @@
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}"
+                                        alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">
@@ -450,11 +468,14 @@
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}"
+                                        alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">
@@ -471,11 +492,14 @@
                         <div class="team-v3-left">
                             <ul>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/facebook-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/twitter-blue.svg') }}"
+                                        alt=""></span></a></li>
                                 <li><a href="#" target="_blank"><span><img
-                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}" alt=""></span></a></li>
+                                        src="{{ url_for('static', filename='images/icon-svg/linkedin-blue.svg') }}"
+                                        alt=""></span></a></li>
                             </ul>
                         </div>
                         <a href="team-single.html" class="team-v3-right">
